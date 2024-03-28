@@ -1,16 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../App.css";
 import { IoMoonOutline } from "react-icons/io5";
+import Logo from "../Asset/Logo.jpg";
 
 function Navbar() {
+  const [activeLink, setActiveLink] = useState("");
+
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".Navbar");
       if (navbar) {
         if (window.scrollY > 100) {
-          navbar.classList.add("sticky");
+          navbar.classList.add("sticky", "scrolled");
         } else {
-          navbar.classList.remove("sticky");
+          navbar.classList.remove("sticky", "scrolled");
         }
       }
     };
@@ -22,16 +25,60 @@ function Navbar() {
     };
   }, []);
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleSetActiveLink = (link) => {
+    setActiveLink(link);
+  };
+
   return (
     <div className="Navbar">
       <a href="#" className="Title">
-        Giorgio.
+        <img src={Logo} alt="Logo" width={60}></img>
       </a>
+
       <div className="Navbarlink">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
+        <a
+          className={activeLink === "home" ? "active" : ""}
+          onClick={() => {
+            scrollToSection("home");
+            handleSetActiveLink("home");
+          }}
+        >
+          Home
+        </a>
+        <a
+          className={activeLink === "about" ? "active" : ""}
+          onClick={() => {
+            scrollToSection("about");
+            handleSetActiveLink("about");
+          }}
+        >
+          About
+        </a>
+        <a
+          className={activeLink === "project" ? "active" : ""}
+          onClick={() => {
+            scrollToSection("project");
+            handleSetActiveLink("project");
+          }}
+        >
+          Project
+        </a>
+        <a
+          className={activeLink === "contact" ? "active" : ""}
+          onClick={() => {
+            scrollToSection("contact");
+            handleSetActiveLink("contact");
+          }}
+        >
+          Contact
+        </a>
       </div>
       <div className="darkMode">
         <IoMoonOutline />
