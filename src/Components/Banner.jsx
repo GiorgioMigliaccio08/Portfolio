@@ -7,7 +7,7 @@ import {
   FaCode,
   FaLaptopCode,
 } from "react-icons/fa";
-
+import { LuGithub } from "react-icons/lu";
 import MyFoto from "../Asset/MyFoto.jpg";
 
 const works = [
@@ -22,7 +22,7 @@ function Banner() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setRotation((rotation) => (rotation + 1) % works.length);
-    }, 2500);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -38,17 +38,20 @@ function Banner() {
           ES6 imports that allows you to include that your project is using.
         </p>
         <div className="social">
-          <a href="#">
+          <a href="https://www.instagram.com/giorgiomigliaccio88?igsh=MXU3bmhqYXBoZWJ1OQ%3D%3D&utm_source=qr">
+            <FaInstagram />
+          </a>
+          <a href="https://www.linkedin.com/in/giorgio-migliaccio-full-stack-developer/">
+            <FaLinkedinIn />
+          </a>
+          <a href="https://github.com/GiorgioMigliaccio08">
+            <LuGithub />
+          </a>
+          <a href="https://www.facebook.com/Giorgiomigliaccio88">
             <FaFacebookF />
           </a>
           <a href="#">
             <FaTwitter />
-          </a>
-          <a href="#">
-            <FaInstagram />
-          </a>
-          <a href="#">
-            <FaLinkedinIn />
           </a>
         </div>
         <a href="#" className="btn">
