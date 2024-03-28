@@ -28,7 +28,7 @@ function Banner() {
   }, []);
 
   return (
-    <section className="banner">
+    <section className="banner" id="home">
       <div className="banner-content">
         <h3>Hello , I am</h3>
         <h1>Giorgio Migliaccio</h1>
