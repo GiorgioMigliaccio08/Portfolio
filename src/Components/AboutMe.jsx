@@ -3,7 +3,7 @@ import MyFoto from "../Asset/MyFoto.jpg";
 
 function AboutMe() {
   return (
-    <section className="about-me" id="About">
+    <section className="about-me" id="about">
       <div className="about-img">
         <img src={MyFoto} alt="Foto Profilo"></img>
       </div>
