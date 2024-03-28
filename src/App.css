@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 7%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  text-decoration: none;
+  transition: background-color 0.5s, box-shadow 0.5s transform 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
+.Navbar.sticky {
+  background: white;
+  box-shadow: 0 0.1rem 0.1rem blue;
+  transform: translateY(0);
+}
+
+.Navbar.sticky.scrolled {
+  background-color: whitesmoke;
+  transition: background-color 0.3s ease transform 0.3s ease;
+}
+
+.Title {
+  font-size: 2rem;
+  color: blue;
+  font-weight: 600;
+  cursor: default;
+  margin-right: 750px;
+  text-decoration: none;
+}
+
+.Navbarlink a {
+  position: relative;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  margin-right: 3.5rem;
+  text-decoration: none;
+}
+
+.Navbar.sticky .Navbarlink a {
+  color: blue;
+}
+
+.Navbar.sticky .Navbarlink a.active {
+  color: #03045e;
+  /* border-bottom: 2px solid white; */
+}
+
+.Navbarlink a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 0.2rem;
+  background: #03045e;
+}
+
+.darkMode {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.Navbar.sticky {
+  background-color: #00b4d8;
+  box-shadow: 0 0.1rem 0.1rem blue;
+}
+
+.Navbar.sticky .darkMode {
+  color: blue;
+}
+
+section {
+  min-height: 75vh;
+  padding: 10rem 7% 2rem;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner .banner-content {
+  max-width: 44rem;
+}
+
+.banner-content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 0;
+  color: #03045e;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #023e8a;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0077b6;
+}
+
+.social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: 0.1rem solid #00b4d8;
+  border-radius: 50%;
+  box-shadow: 0 0.2rem 0.5rem#023e8a;
+  font-size: 2rem;
+  color: #00b4d8;
+  margin: 1.5rem 1.5rem 3rem 0;
+}
+
+.social a:hover {
+  background-color: #023e8a;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.2rem 2.8rem;
+  background-color: #023e8a;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.2rem 0.5rem #00b4d8;
+  font-size: 1.2rem;
+  color: #00b4d8;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  border: 0.2rem solid transparent;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #00b4d8;
+  border-color: blue;
+}
+
+.banner .work-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 768px;
+  height: 768px;
+  overflow: hidden;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner .work-container .work-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 768px;
+  height: 768px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.banner .work-container .work-box .work {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #023e8a;
+  transform: rotate(calc(360deg / 4 * var(--i)));
+  transform-origin: 384px;
+  background: white;
+  padding: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner .work {
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.banner .circle {
+  width: 560px;
+  height: 560px;
+  border: 3px solid #03045e;
+  border-radius: 50%;
+}
+
+.banner .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 384px solid #03045e;
+  border-right: 384px solid #0077b6;
+  border-bottom: 384px solid #00b4d8;
+  border-left: 384px solid transparent;
+}
+
+.banner-img img {
+  position: absolute;
+  top: 163px;
+  bottom: 0;
+  right: 0;
+  width: 28%;
+  pointer-events: none;
+}
+
+span {
+  color: blue;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: #0077b6;
+  margin-top: 7px;
+}
+
+.heading {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 1.5rem;
+}
+
+.about-content p {
+  font-size: 1rem;
+  margin: 2rem 0 3rem;
 }
