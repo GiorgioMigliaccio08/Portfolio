@@ -29,7 +29,7 @@ function AboutMe() {
 
       <div className="servizi">
         <h2 class="heading">
-          My<span>Servives</span>
+          My<span> Servives</span>
         </h2>
         <div className="services-container">
           <div className="services-box">
