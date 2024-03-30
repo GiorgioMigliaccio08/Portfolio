@@ -238,6 +238,7 @@ span {
   gap: 10rem;
   background-color: white;
   padding-bottom: 6rem;
+  padding-top: 5rem;
 }
 
 .heading {
@@ -303,13 +304,13 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .services-box {
-  flex: 1 1 20rem;
+  flex: 1 1 10rem;
   background-color: white;
-  padding: 3rem 2rem 4rem;
+  padding: 2rem 2rem 2rem;
   border-radius: 2rem;
   box-shadow: 0 0.1rem 0.5rem #023e8a;
   text-align: center;
@@ -361,4 +362,88 @@ span {
   background: transparent;
   color: #00b4d8;
   border-color: blue;
+}
+
+/* SEZIONE PROGETTI */
+
+.project {
+  padding-bottom: 10rem;
+}
+
+.heading-progect {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 3.5rem;
+  text-align: start;
+}
+
+.project h2 {
+  margin-bottom: 4rem;
+}
+
+.project .progetti-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.progetti-conteiner .progetti-box {
+  position: relative;
+  display: flex;
+  border-radius: 2rem;
+  box-shadow: 0, 1;
+  overflow: hidden;
+}
+
+.progetti-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.progetti-box:hover img {
+  transform: scale(1.1);
+}
+
+.progetti-box .progetti-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba (0, 0, 0, 0.1), red);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.progetti-box:hover .progetti-layer {
+  opacity: 1;
+}
+
+.progetti-layer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.progetti-layer p {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.progetti-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  color: #023e8a;
+  background: white;
+  border-radius: 50%;
+  font-size: 2rem;
 }
