@@ -39,6 +39,36 @@ function Project() {
             </a>
           </div>
         </div>
+        <div className="progetti-box">
+          <img src={ProgettoUno} alt="Foto Progetto"></img>
+          <div className="progetti-layer">
+            <h4>Heart Archive Hub</h4>
+            <p>Al contrario di quanto si pensi,</p>
+            <a href="#">
+              <FaLink className="icona-progetti" />
+            </a>
+          </div>
+        </div>
+        <div className="progetti-box">
+          <img src={ProgettoUno} alt="Foto Progetto"></img>
+          <div className="progetti-layer">
+            <h4>Heart Archive Hub</h4>
+            <p>Al contrario di quanto si pensi,</p>
+            <a href="#">
+              <FaLink className="icona-progetti" />
+            </a>
+          </div>
+        </div>
+        <div className="progetti-box">
+          <img src={ProgettoUno} alt="Foto Progetto"></img>
+          <div className="progetti-layer">
+            <h4>Heart Archive Hub</h4>
+            <p>Al contrario di quanto si pensi,</p>
+            <a href="#">
+              <FaLink className="icona-progetti" />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
