@@ -17,12 +17,16 @@ function AboutMe() {
           <h2 class="heading">
             About <span>Me</span>
           </h2>
-          <h3>Hi, I'm Here To Help Your Next Project! </h3>
+          <h3>FULL STACK DEVELOPER </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <br />
-            odio incidunt! Ipsam hic molestias ad voluptas doloribus ratione
-            animi alias dicta quo.
+            Ciao sono Giorgio Migliaccio e vivo a Prizzi un piccolo paesino al
+            centro della Sicilia .<br /> Ho da sempre avuto la passione per
+            l'informatica e di come essa fosse parte integrante
+            <br /> della nostra vita quotidiana. Passo le mie giornate a
+            programmare pagine web interattive,
+            <br /> e sono alla ricerca di nuove opportunità lavorative per
+            accresce il mio bagaglio culturale
+            <br /> in ambito informatico.
           </p>
         </div>
       </div>
