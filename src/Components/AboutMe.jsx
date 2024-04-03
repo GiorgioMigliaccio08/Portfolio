@@ -1,5 +1,14 @@
 import React from "react";
 import Foto from "../Asset/Profilo.jpg";
+import { Row, Col } from "react-bootstrap";
+import html from "../Asset/html.jpg";
+import css from "../Asset/css.jpg";
+import sass from "../Asset/sass.jpg";
+import java from "../Asset/java.jpg";
+import react from "../Asset/react.jpg";
+import javascript from "../Asset/javascript.jpg";
+import sql from "../Asset/sql.jpg";
+import github from "../Asset/github.jpg";
 
 import { FaLaptopCode } from "react-icons/fa";
 import { HiPaintBrush } from "react-icons/hi2";
@@ -73,6 +82,29 @@ function AboutMe() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="Skills">
+        <h2 className="heading">
+          My<span> Skills</span>
+        </h2>
+        <Row className="skills-row">
+          <img src={html} alt="HTML" className="centered-image skill-image" />
+          <img src={css} alt="CSS" className="centered-image skill-image" />
+          <img src={sass} alt="Sass" className="centered-image skill-image" />
+          <img src={java} alt="Java" className="centered-image skill-image" />
+          <img src={react} alt="React" className="centered-image skill-image" />
+          <img
+            src={javascript}
+            alt="JavaScript"
+            className="centered-image skill-image"
+          />
+          <img src={sql} alt="SQL" className="centered-image skill-image" />
+          <img
+            src={github}
+            alt="GitHub"
+            className="centered-image skill-image"
+          />
+        </Row>
       </div>
     </section>
   );
