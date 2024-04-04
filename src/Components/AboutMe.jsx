@@ -9,6 +9,10 @@ import react from "../Asset/react.jpg";
 import javascript from "../Asset/javascript.jpg";
 import sql from "../Asset/sql.jpg";
 import github from "../Asset/github.jpg";
+import typescript from "../Asset/typescript.png";
+import bootstrap from "../Asset/bootstrap.jpg";
+import pgadmin from "../Asset/pgadmin.png";
+import spring from "../Asset/spring.png";
 
 import { FaLaptopCode } from "react-icons/fa";
 import { HiPaintBrush } from "react-icons/hi2";
@@ -90,15 +94,37 @@ function AboutMe() {
         <Row className="skills-row">
           <img src={html} alt="HTML" className="centered-image skill-image" />
           <img src={css} alt="CSS" className="centered-image skill-image" />
+          <img
+            src={bootstrap}
+            alt="CSS"
+            className="centered-image skill-image"
+          />
           <img src={sass} alt="Sass" className="centered-image skill-image" />
-          <img src={java} alt="Java" className="centered-image skill-image" />
           <img src={react} alt="React" className="centered-image skill-image" />
+          <img
+            src={typescript}
+            alt="React"
+            className="centered-image skill-image"
+          />
           <img
             src={javascript}
             alt="JavaScript"
             className="centered-image skill-image"
           />
+          <img src={java} alt="Java" className="centered-image skill-image" />
+
+          <img
+            src={spring}
+            alt="React"
+            className="centered-image skill-image"
+          />
+
           <img src={sql} alt="SQL" className="centered-image skill-image" />
+          <img
+            src={pgadmin}
+            alt="GitHub"
+            className="centered-image skill-image"
+          />
           <img
             src={github}
             alt="GitHub"
