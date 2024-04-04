@@ -16,7 +16,7 @@ function Project() {
             <h4>Heart Archive Hub</h4>
             <p>Al contrario di quanto si pensi,</p>
             <div>
-              <a href="#">
+              <a href="https://github.com/GiorgioMigliaccio08/Capston_Front-End">
                 <FaRegFileCode className="icona-progetti" />
               </a>
               <a href="#">
