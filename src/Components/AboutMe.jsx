@@ -1,7 +1,7 @@
 import React from "react";
 import Foto from "../Asset/Profilo.jpg";
-import { Row, Col } from "react-bootstrap";
-import html from "../Asset/html.jpg";
+import { Row } from "react-bootstrap";
+import html from "../Asset/html.png";
 import css from "../Asset/css.jpg";
 import sass from "../Asset/sass.jpg";
 import java from "../Asset/java.jpg";
