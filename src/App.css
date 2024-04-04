@@ -366,6 +366,21 @@ span {
   border-color: blue;
 }
 
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-image {
+  max-width: 200px;
+  height: auto;
+  max-height: 200px;
+  margin: 5px;
+  background: white;
+}
+
 /* SEZIONE PROGETTI */
 
 .project {
@@ -384,15 +399,16 @@ span {
 }
 
 .project .progetti-conteiner {
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
 .progetti-conteiner .progetti-box {
   position: relative;
-  display: flex;
+  width: calc(50% - 1rem);
+  margin-bottom: 2rem;
   border-radius: 2rem;
   box-shadow: 0, 1;
   overflow: hidden;
@@ -401,10 +417,12 @@ span {
 .progetti-box img {
   width: 100%;
   transition: 0.5s ease;
+  filter: blur(0);
 }
 
 .progetti-box:hover img {
   transform: scale(1.1);
+  filter: blur(5px);
 }
 
 .progetti-box .progetti-layer {
@@ -448,4 +466,11 @@ span {
   background: white;
   border-radius: 50%;
   font-size: 2rem;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .progetti-conteiner .progetti-box {
+    width: 100%;
+  }
 }
