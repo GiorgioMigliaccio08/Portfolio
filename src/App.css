@@ -379,6 +379,11 @@ span {
   max-height: 200px;
   margin: 5px;
   background: white;
+  transition: transform 1.5s ease;
+}
+
+.skill-image:hover {
+  transform: rotateY(360deg);
 }
 
 /* SEZIONE PROGETTI */
