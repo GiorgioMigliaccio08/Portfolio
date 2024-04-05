@@ -4,6 +4,7 @@ import Navbar from "../src/Components/Navbar";
 import Banner from "./Components/Banner";
 import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Project";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Banner />
         <AboutMe />
         <Projects />
+        <Footer />
       </div>
     </BrowserRouter>
   );
