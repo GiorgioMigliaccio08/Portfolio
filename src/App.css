@@ -374,9 +374,9 @@ span {
 }
 
 .skill-image {
-  max-width: 200px;
+  max-width: 160px;
   height: auto;
-  max-height: 200px;
+  max-height: 160px;
   margin: 5px;
   background: white;
   transition: transform 1.5s ease;
@@ -498,6 +498,7 @@ span {
 }
 
 .FooterWrite {
+  font-size: 16px;
   position: absolute;
   top: 95%;
   left: 50%;
@@ -507,6 +508,16 @@ span {
 }
 
 .Socials a {
+  font-size: 18px;
   color: white;
-  margin-right: 5px;
+  margin-right: 10px;
+  transition: 0.5s ease;
+}
+.Socials a:hover {
+  font-size: 20px;
+  color: #03045e;
+}
+
+.legal {
+  color: #03045e;
 }
