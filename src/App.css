@@ -479,3 +479,34 @@ span {
     width: 100%;
   }
 }
+
+/* PARTE CSS DEL FOOTER */
+.footer {
+  position: relative;
+  width: 86%;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.FooterWrite {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.Socials a {
+  color: white;
+  margin-right: 5px;
+}
