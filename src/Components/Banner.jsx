@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
 import MyFoto from "../Asset/MyFoto.jpg";
+import Curriculum from "../Asset/Cv.pdf";
 
 const works = [
   { icon: <FaLaptopCode />, title: "Full-Stack Developer" },
@@ -22,10 +23,19 @@ function Banner() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setRotation((rotation) => (rotation + 1) % works.length);
-    }, 2000);
+    }, 1800);
 
     return () => clearInterval(intervalId);
   }, []);
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = Curriculum;
+    link.download = "Cv Migliaccio Giorgio";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section className="banner" id="home">
@@ -54,9 +64,9 @@ function Banner() {
             <FaTwitter />
           </a>
         </div>
-        <a href="#" className="btn">
+        <a href="#" className="btn" onClick={handleDownload}>
           {" "}
-          Dowload CV
+          Download CV{" "}
         </a>
       </div>
 
