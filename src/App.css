@@ -379,7 +379,7 @@ span {
   max-height: 160px;
   margin: 5px;
   background: white;
-  transition: transform 1.5s ease;
+  transition: transform 2s;
 }
 
 .skill-image:hover {
