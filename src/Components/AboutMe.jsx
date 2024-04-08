@@ -7,6 +7,8 @@ import sass from "../Asset/sass.jpg";
 import java from "../Asset/java.jpg";
 import react from "../Asset/react.jpg";
 import javascript from "../Asset/javascript.jpg";
+import php from "../Asset/php.png";
+import C from "../Asset/C.png";
 import sql from "../Asset/sql.jpg";
 import github from "../Asset/github.jpg";
 import typescript from "../Asset/typescript.png";
@@ -96,14 +98,14 @@ function AboutMe() {
           <img src={css} alt="CSS" className="centered-image skill-image" />
           <img
             src={bootstrap}
-            alt="CSS"
+            alt="bootstrap"
             className="centered-image skill-image"
           />
           <img src={sass} alt="Sass" className="centered-image skill-image" />
           <img src={react} alt="React" className="centered-image skill-image" />
           <img
             src={typescript}
-            alt="React"
+            alt="typescript"
             className="centered-image skill-image"
           />
           <img
@@ -111,18 +113,20 @@ function AboutMe() {
             alt="JavaScript"
             className="centered-image skill-image"
           />
+          <img src={php} alt="php" className="centered-image skill-image" />
+          <img src={C} alt="C" className="centered-image skill-image" />
           <img src={java} alt="Java" className="centered-image skill-image" />
 
           <img
             src={spring}
-            alt="React"
+            alt="spring"
             className="centered-image skill-image"
           />
 
           <img src={sql} alt="SQL" className="centered-image skill-image" />
           <img
             src={pgadmin}
-            alt="GitHub"
+            alt="pgadmin"
             className="centered-image skill-image"
           />
           <img
