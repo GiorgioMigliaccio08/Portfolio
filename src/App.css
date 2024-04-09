@@ -389,7 +389,7 @@ span {
 /* SEZIONE PROGETTI */
 
 .project {
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
 }
 
 .heading-progect {
@@ -413,7 +413,7 @@ span {
 .progetti-conteiner .progetti-box {
   position: relative;
   width: calc(50% - 1rem);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-radius: 2rem;
   box-shadow: 0, 1;
   overflow: hidden;
