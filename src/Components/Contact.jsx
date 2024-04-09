@@ -22,10 +22,10 @@ function Contact() {
           rows={10}
           placeholder="Il tuo messaggio"
         ></textarea>
-        <imput type="submit" value="Invia" className="btn">
-          Invia!
-        </imput>
       </form>
+      <imput type="submit" value="Invia" className="btn-contact">
+        Invia!
+      </imput>
     </section>
   );
 }
