@@ -8,6 +8,18 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (
+          window.scrollY >= sectionTop &&
+          window.scrollY < sectionTop + sectionHeight
+        ) {
+          setActiveLink(section.id);
+        }
+      });
+
       const navbar = document.querySelector(".Navbar");
       if (navbar) {
         if (window.scrollY > 100) {
