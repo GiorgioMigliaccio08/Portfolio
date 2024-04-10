@@ -1,8 +1,14 @@
 import React from "react";
-
+import { FaArrowUp } from "react-icons/fa";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
+  const scrollToHome = () => {
+    const homeSection = document.getElementById("home");
+    if (homeSection) {
+      homeSection.scrollIntoView({ behavior: "smooth", duration: 4000 });
+    }
+  };
   return (
     <section className="footer">
       <div className="background">
@@ -80,6 +86,11 @@ function Footer() {
         </div>
 
         <p className="legal">Giorgio Migliaccio © 2024</p>
+      </div>
+      <div className="torna-su" onClick={scrollToHome}>
+        <a href="#home" className="arrow">
+          <FaArrowUp />
+        </a>
       </div>
     </section>
   );
