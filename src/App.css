@@ -733,6 +733,17 @@ span {
   transform: rotateY(360deg);
 }
 
+@media screen and (max-width: 768px) {
+  .skill-image {
+    max-width: 120px;
+    height: auto;
+    max-height: 160px;
+    margin: 5px;
+    background: white;
+    transition: transform 2s;
+  }
+}
+
 /* SEZIONE PROGETTI */
 
 .project {
