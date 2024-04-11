@@ -836,6 +836,10 @@ span {
   .progetti-conteiner .progetti-box {
     width: 100%;
   }
+  .heading-progect {
+    font-size: 2rem;
+    margin-right: 190px;
+  }
 }
 
 /* PARTE CONTATTI */
