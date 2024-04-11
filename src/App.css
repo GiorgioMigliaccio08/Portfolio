@@ -905,7 +905,7 @@ span {
   display: inline-block;
   padding: 1.2rem 2.8rem;
   background-color: #023e8a;
-  border-radius: 0.6rem;
+  border-radius: 2rem;
   box-shadow: 0 0.2rem 0.5rem #00b4d8;
   font-size: 1.2rem;
   color: #00b4d8;
@@ -968,22 +968,70 @@ span {
 }
 
 .Socials a {
-  font-size: 18px;
+  font-size: 25px;
   color: white;
-  margin-right: 10px;
+  margin-right: 20px;
   transition: 0.5s ease;
 }
 .Socials a:hover {
-  font-size: 20px;
+  font-size: 30px;
   color: #03045e;
 }
 
 .legal {
+  font-size: 20px;
   color: #03045e;
 }
 
-/* CSS PER SCHERMI PICCOLI */
+.torna-Su {
+  background: #023e8a;
+  color: #023e8a;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 0.5rem #023e8a;
+  margin-left: 630px;
+  margin-top: 120px;
+}
 
-/* NAVBAR */
+@media screen and (max-width: 768px) {
+  .footer {
+    position: relative;
+    width: 86%;
+    height: 50vh;
+    overflow: hidden;
+  }
 
-/* BANNER */
+  .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+  .torna-Su {
+    background: #023e8a;
+    color: #00b4d8;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.2rem 0.5rem #00b4d8;
+    margin-left: 380px;
+    margin-top: 60px;
+  }
+  .Socials a {
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+    transition: 0.5s ease;
+  }
+
+  .Socials a:hover {
+    font-size: 25px;
+    color: #03045e;
+  }
+
+  .legal {
+    font-size: 15px;
+    color: #03045e;
+  }
+}
