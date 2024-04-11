@@ -517,6 +517,71 @@ span {
   font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    padding-bottom: 7rem;
+    padding-top: 0rem;
+  }
+
+  .heading {
+    text-align: start;
+    font-size: 2rem;
+  }
+
+  .about-img {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: 0.3rem solid #00b4d8;
+  }
+
+  .about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 0.6rem solid #03045e;
+    border-bottom: 0.6rem solid #03045e;
+    border-left: 0.2rem solid #0077b6;
+    border-right: 0.2rem solid #0077b6;
+  }
+
+  .about-content h2 {
+    text-align: left;
+    line-height: 1.1;
+  }
+
+  .about-content h3 {
+    font-size: 1.2rem;
+    color: #0077b6;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
+    margin: 2rem 0 3rem;
+    color: #023e8a;
+    font-weight: 400;
+  }
+}
+
 .servizi {
   min-height: auto;
   padding-bottom: 2rem;
@@ -589,6 +654,63 @@ span {
   background: transparent;
   color: #00b4d8;
   border-color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .servizi {
+    min-height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .servizi h2 {
+    margin-bottom: 2rem;
+  }
+
+  .servizi .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .services-box {
+    flex: 1 1 10rem;
+    background-color: white;
+    padding: 2rem 2rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.1rem 0.5rem #023e8a;
+    text-align: center;
+    border-top: 0.6rem solid #023e8a;
+    border-bottom: 0.6rem solid #023e8a;
+    transition: 0.5s ease;
+  }
+
+  .services-box:hover {
+    box-shadow: 0 0.1rem 2rem white;
+    transform: scale(1.02);
+  }
+
+  .services-container .icon-servizi {
+    font-size: 3rem;
+    color: #023e8a;
+  }
+
+  .services-container h3 {
+    font-size: 1.3rem;
+    transition: 0.5s ease;
+  }
+
+  .services-box:hover h3 {
+    color: #023e8a;
+  }
+
+  .services-container p {
+    font-size: 1rem;
+    margin: 1rem 0 2rem;
+  }
 }
 
 .skills-row {
