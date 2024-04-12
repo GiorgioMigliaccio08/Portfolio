@@ -92,6 +92,9 @@ function Footer() {
           <FaArrowUp />
         </a>
       </div>
+      <button className="torna-Su" onClick={scrollToHome}>
+        <FaArrowUp />
+      </button>
     </section>
   );
 }
