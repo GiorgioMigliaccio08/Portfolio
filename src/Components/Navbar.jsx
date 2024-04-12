@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 import { IoMoonOutline } from "react-icons/io5";
+import { IoSunny } from "react-icons/io5";
 import Logo from "../Asset/Logo.jpg";
 
 function Navbar() {
   const [activeLink, setActiveLink] = useState("");
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,8 +50,12 @@ function Navbar() {
     setActiveLink(link);
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="Navbar">
+    <div className={`Navbar ${darkMode ? "dark" : ""}`}>
       <a href="#" className="Title">
         <img src={Logo} alt="Logo" width={60}></img>
       </a>
@@ -92,8 +98,15 @@ function Navbar() {
           Contact
         </a>
       </div>
-      <div className="darkMode">
-        <IoMoonOutline />
+      <div
+        className={`navbar ${darkMode ? "active" : ""}`}
+        onClick={toggleDarkMode}
+      >
+        {darkMode ? (
+          <IoSunny className="luce" />
+        ) : (
+          <IoMoonOutline className="buio" />
+        )}
       </div>
     </div>
   );
