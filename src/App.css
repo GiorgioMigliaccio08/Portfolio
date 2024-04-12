@@ -66,12 +66,18 @@
   cursor: pointer;
 }
 
+.luce,
+.buio {
+  font-size: 1.5rem;
+  color: white;
+}
+
 .Navbar.sticky {
   background-color: #00b4d8;
   box-shadow: 0 0.1rem 0.1rem blue;
 }
 
-.Navbar.sticky .darkMode {
+.Navbar.sticky .darkMode .luce .buio {
   color: #03045e;
 }
 
