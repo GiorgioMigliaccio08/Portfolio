@@ -34,7 +34,7 @@ function AboutMe() {
           </h2>
           <h3>FULL STACK DEVELOPER </h3>
           <p>
-            Ciao sono Giorgio Migliaccio e vivo a Prizzi un piccolo paesino al
+            Ciao sono Giorgio Migliaccio, e vivo a Prizzi un piccolo paesino al
             centro della Sicilia .<br /> Ho da sempre avuto la passione per
             l'informatica e di come essa fosse parte integrante
             <br /> della nostra vita quotidiana. Passo le mie giornate a
@@ -55,8 +55,9 @@ function AboutMe() {
             <FaLaptopCode className="icon-servizi" />
             <h3>Front-End Developer</h3>
             <p>
-              Al contrario di quanto si pensi, Lorem Ipsum non è semplicemente
-              una sequenza casuale AC semplicemente una sequenza casuale
+              Coniugo l'estetica e la funzionalità per creare esperienze
+              digitali straordinarie con una robusta programmazione, sono qui
+              per realizzare la tua visione con precisione e maestria.
             </p>
             <a href="#" className="btn-servizi">
               {" "}
@@ -67,8 +68,10 @@ function AboutMe() {
             <FaLaptopCode className="icon-servizi" />
             <h3>Back-End Developer</h3>
             <p>
-              Al contrario di quanto si pensi, Lorem Ipsum non è semplicemente
-              una sequenza casuale AC semplicemente una sequenza casuale
+              Affidami il tuo backend , costruisco il motore pulsante delle tue
+              applicazioni digitali, garantendo prestazioni affidabili,
+              sicurezza e scalabilità senza compromessi, rendendo ogni linea di
+              codice un pilastro.
             </p>
             <a href="#" className="btn-servizi">
               {" "}
@@ -79,8 +82,10 @@ function AboutMe() {
             <HiPaintBrush className="icon-servizi" />
             <h3>Grafic Designer</h3>
             <p>
-              Al contrario di quanto si pensi, Lorem Ipsum non è semplicemente
-              una sequenza casuale AC semplicemente una sequenza casuale
+              Trasformo idee in opere d'arte digitali, mescolando creatività e
+              tecnologia per dare vita a design che catturano l'immaginazione.
+              Con passione e precisione, darò forma alla tua visione visiva con
+              stile e originalità.
             </p>
             <a href="#" className="btn-servizi">
               {" "}
