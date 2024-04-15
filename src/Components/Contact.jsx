@@ -4,17 +4,31 @@ import emailjs from "emailjs-com";
 function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
+    const { fullName, email, phone, description, message } = e.target.elements;
 
-    const userId = "TUO_USER_ID";
+    const templateParams = {
+      from_name: fullName.value,
+      reply_to: email.value,
+      phone: phone.value,
+      description: description.value,
+      message: message.value,
+    };
 
-    emailjs.sendForm("SERVICE_ID", "TEMPLATE_ID", e.target, userId).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     e.target.reset();
   };
