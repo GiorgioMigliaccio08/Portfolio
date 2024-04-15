@@ -50,12 +50,8 @@ function Navbar() {
     setActiveLink(link);
   };
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <div className={`Navbar ${darkMode ? "dark" : ""}`}>
+    <div className="Navbar">
       <a href="#" className="Title">
         <img src={Logo} alt="Logo" width={60}></img>
       </a>
@@ -97,16 +93,6 @@ function Navbar() {
         >
           Contact
         </a>
-      </div>
-      <div
-        className={`navbar ${darkMode ? "active" : ""}`}
-        onClick={toggleDarkMode}
-      >
-        {darkMode ? (
-          <IoSunny className="luce" />
-        ) : (
-          <IoMoonOutline className="buio" />
-        )}
       </div>
     </div>
   );

@@ -43,9 +43,10 @@ function Banner() {
         <h3>Hello , I am</h3>
         <h1>Giorgio Migliaccio</h1>
         <p>
-          Include popular icons in your React projects easily ,fidksksk
+          Il mio Hobby è navigare giornalmente nel vasto universo
           <br />
-          ES6 imports that allows you to include that your project is using.
+          dell'informatica con passione, conoscenza ma sopratutto tanta
+          creatività.
         </p>
         <div className="social">
           <a href="https://www.instagram.com/giorgiomigliaccio88?igsh=MXU3bmhqYXBoZWJ1OQ%3D%3D&utm_source=qr">
