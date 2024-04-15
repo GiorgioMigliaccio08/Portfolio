@@ -514,7 +514,7 @@ span {
 }
 
 .about-content h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #023e8a;
 }
 
@@ -579,7 +579,7 @@ span {
 
   .about-content h3 {
     font-size: 1.2rem;
-    color: #0077b6;
+    color: #023e8a;
   }
 
   .about-content p {
@@ -1053,8 +1053,8 @@ span {
     padding: 0.5rem;
     border-radius: 2rem;
     box-shadow: 0 0.2rem 0.5rem #00b4d8;
-    margin-left: 300px;
-    margin-top: 200px;
+    margin-left: 380px;
+    margin-top: 20px;
   }
   .Socials a {
     font-size: 18px;
