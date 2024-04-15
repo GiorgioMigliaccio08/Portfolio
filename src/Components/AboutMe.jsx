@@ -40,8 +40,7 @@ function AboutMe() {
             <br /> della nostra vita quotidiana. Passo le mie giornate a
             programmare pagine web interattive,
             <br /> e sono alla ricerca di nuove opportunità lavorative per
-            accresce il mio bagaglio culturale
-            <br /> in ambito informatico.
+            accresce il mio bagaglio culturale in ambito informatico.
           </p>
         </div>
       </div>
