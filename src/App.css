@@ -1048,13 +1048,14 @@ span {
     z-index: -1;
   }
   .torna-Su {
-    background: #023e8a;
+    display: none;
+    /* background: #023e8a;
     color: #00b4d8;
     padding: 0.5rem;
     border-radius: 2rem;
     box-shadow: 0 0.2rem 0.5rem #00b4d8;
     margin-left: 290px;
-    margin-top: 200px;
+    margin-top: 140px; */
   }
   .Socials a {
     font-size: 23px;
