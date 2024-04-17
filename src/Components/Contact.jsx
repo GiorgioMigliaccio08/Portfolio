@@ -1,36 +1,19 @@
-import React from "react";
-import emailjs from "emailjs-com";
+import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 function Contact() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { fullName, email, phone, description, message } = e.target.elements;
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
-    const templateParams = {
-      from_name: fullName.value,
-      reply_to: email.value,
-      phone: phone.value,
-      description: description.value,
-      message: message.value,
-    };
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-    emailjs
-      .send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_EMAILJS_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    Swal.fire({
+      title: "Ottimo",
+      text: "Massaggio Inviato!!",
+      icon: "success",
+    });
 
-    e.target.reset();
+    setFormSubmitted(true);
   };
 
   return (
