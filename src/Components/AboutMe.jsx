@@ -9,7 +9,7 @@ import react from "../Asset/react.jpg";
 import javascript from "../Asset/javascript.jpg";
 import php from "../Asset/php.png";
 import C from "../Asset/C.png";
-import sql from "../Asset/sql.jpg";
+import sql from "../Asset/Sql.png";
 import github from "../Asset/github.jpg";
 import typescript from "../Asset/typescript.png";
 import bootstrap from "../Asset/bootstrap.jpg";
