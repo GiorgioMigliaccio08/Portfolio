@@ -27,7 +27,7 @@ function Project() {
               <a href="https://github.com/GiorgioMigliaccio08/Edilizia_Perfetta">
                 <FaRegFileCode className="icona-progetti" />
               </a>
-              <a href="#">
+              <a href="https://supernovaconstruction.vercel.app/">
                 <FiExternalLink className="icona-progetti" />
               </a>
             </div>
