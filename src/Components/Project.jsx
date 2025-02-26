@@ -3,6 +3,7 @@ import ProgettoUno from "../Asset/Heart-Archive-Hub.jpg";
 import ProgettoDue from "../Asset/Mercedes-Project.jpg";
 import ProgettoTre from "../Asset/Netflix.png";
 import ProgettoQuattro from "../Asset/Medium.jpg";
+import ProgettoCinque from "../Asset/EdiliziaPerfetta.jpg";
 import { FaLink, FaRegFileCode } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
@@ -13,6 +14,25 @@ function Project() {
         Ultimi <span>Progetti</span>
       </h2>
       <div className="progetti-conteiner">
+        <div className="progetti-box">
+          <img src={ProgettoCinque} alt="Foto Progetto"></img>
+          <div className="progetti-layer">
+            <h4>Supernova </h4>
+            <p>
+              Sito Web per una azienda di costruzioni edili in cui ho voluto
+              riprendere vecchi linguaggi di programmazione come Html Css
+              Javascript ottenendo un fantistico sito web in pixel perfect.
+            </p>
+            <div>
+              <a href="https://github.com/GiorgioMigliaccio08/Edilizia_Perfetta">
+                <FaRegFileCode className="icona-progetti" />
+              </a>
+              <a href="#">
+                <FiExternalLink className="icona-progetti" />
+              </a>
+            </div>
+          </div>
+        </div>
         <div className="progetti-box">
           <img src={ProgettoUno} alt="Foto Progetto"></img>
           <div className="progetti-layer">
