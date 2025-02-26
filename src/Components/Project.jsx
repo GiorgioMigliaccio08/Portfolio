@@ -19,7 +19,7 @@ function Project() {
           <div className="progetti-layer">
             <h4>Supernova </h4>
             <p>
-              Sito Web per una azienda di costruzioni edili in cui ho voluto
+              Sito Web per una azienda di costruzioni edile in cui ho voluto
               riprendere vecchi linguaggi di programmazione come Html Css
               Javascript ottenendo un fantistico sito web in pixel perfect.
             </p>
